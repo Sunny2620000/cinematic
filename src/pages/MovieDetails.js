@@ -32,7 +32,7 @@ const MovieDetails = () => {
       }
     };
     fetchMovieDetails();
-  }, []);
+  }, [id]);
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">

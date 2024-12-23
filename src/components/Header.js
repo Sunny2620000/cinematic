@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate, NavLink, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Header = () => {
   const [hidden, setHidden] = useState(true);
-  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darMode")) || true

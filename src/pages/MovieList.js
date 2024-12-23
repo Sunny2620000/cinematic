@@ -1,7 +1,8 @@
 import { Cards } from "../components/index";
-import { useFetch } from "../hooks/main";
+import { useFetch, useTitle } from "../hooks/main";
 const MovieList = (props) => {
   const { movies } = useFetch(props.title);
+  useTitle(props.pagetitle)
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">

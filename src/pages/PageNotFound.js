@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import pageNotFound from "../assets/images/pagenotfound.png";
 import { Button } from "../components";
-const PageNotFound = () => {
+import { useTitle } from "../hooks/main"
+const PageNotFound = (props) => {
+  useTitle(props.pagetitle)
   return (
     <main>
       <section className="flex flex-col justify-center px-2">
